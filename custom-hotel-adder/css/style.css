@@ -1,0 +1,101 @@
+body {
+    background-color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
+.wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.neomorph-input, .neomorph-select, .neomorph-button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+    transition: all 0.3s ease;
+}
+
+.neomorph-input:focus, .neomorph-select:focus, .neomorph-button:focus {
+    outline: none;
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff, 0 0 0 3px #a0a0a0;
+}
+
+.neomorph-button {
+    cursor: pointer;
+}
+
+.neomorph-button:hover {
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+}
+
+.image-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.image-preview img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+    position: relative;
+}
+
+.image-preview .remove-image {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(255, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-button {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-button:hover {
+    background: rgba(255, 255, 255, 1);
+}
